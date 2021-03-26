@@ -1,0 +1,163 @@
+/* CSS - Reset */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+em,
+img,
+small,
+strong,
+b,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.menu {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.search-bar {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 584px;
+}
+
+.google-logo {
+  width: 271px;
+  height: 97px;
+  padding: 10px;
+  align-self: center;
+}
+
+.search-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button-group {
+  padding: 20px;
+  align-self: center;
+}
+
+.search-button {
+  margin: 10px;
+  border: none;
+}
+
+.search-button-two {
+  margin: 10px;
+  border: none;
+}
+
+.footer-lang {
+  background-color: #f2f2f2;
+}
+.footer-info {
+  background-color: #f2f2f2;
+  border-style: inset;
+  border-bottom-color: f1f1f1;
+  border-width: 1px;
+  display: grid;
+  grid-template-areas: "company co2 settings";
+}
+
+.footer-info-co2 {
+  grid-area: "co2";
+  grid-column: 1fr;
+}
+
+.footer-info-company {
+  grid-area: company;
+  grid-column: 1fr;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-info-settings {
+  grid-area: "settings";
+  grid-column: 1fr;
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  .footer-info {
+    grid-template-areas: "company co2 settings";
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-info {
+    grid-template-areas:
+      "co2 co2"
+      "company settings";
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-info {
+    grid-template-areas:
+      "co2"
+      "company"
+      "settings";
+    justify-content: space-evenly;
+  }
+}
