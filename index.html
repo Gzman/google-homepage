@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <div class="navbar">
+    <nav>
       <div class="about">
         <a href="">Über Google</a>
         <a href="">Store</a>
@@ -18,48 +18,49 @@
         <a href="">Bilder</a>
         <a href="">Menü</a>
         <form>
-          <input class="nav-sign-btn" type="button" value="Anmelden" />
+          <input id="sign-btn" type="button" value="Anmelden" />
         </form>
       </div>
-    </div>
-    <div class="search-bar">
+    </nav>
+    <main class="search-bar">
       <img
         class="google-logo"
         src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Goole Logo"
       />
       <form class="search-form">
         <input class="search-text" type="text" />
-        <div class="search-button-group">
-          <input class="search-button" type="button" value="Google Suche" />
-          <input class="search-button" type="button" value="Auf gut Glück!" />
+        <div class="search-btn-group">
+          <input class="search-btn" type="button" value="Google Suche" />
+          <input class="search-btn" type="button" value="Auf gut Glück!" />
         </div>
       </form>
-    </div>
-    <div>
-      <div class="footer-lang">
-        <a href="">Germany</a>
+    </main>
+    <footer>
+      <div class="lang">
+        <a href="">Deutsch</a>
       </div>
-      <div class="footer-info">
-        <div class="footer-info-co2">
+      <div class="info">
+        <div class="info-co2">
           <a href=""
             ><img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
-              class="footer-info-co2-img"
+              class="info-co2-img"
               alt=""
             />CO2-neutral seit 2007</a
           >
         </div>
-        <div class="footer-info-company">
+        <div class="info-company">
           <a href="">Werbeprogramme</a>
           <a href="">Unternehmen</a>
           <a href="">Wie funktioniert die Google Suche?</a>
         </div>
-        <div class="footer-info-settings">
+        <div class="info-settings">
           <a href="">Datenschutzerklärung</a>
           <a href="">Nutzungsbedigungen</a>
           <a href="">Einstellungen</a>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
