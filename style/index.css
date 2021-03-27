@@ -40,9 +40,9 @@ a:hover {
 }
 
 input[type="button"] {
-  padding: 8px 20px 8px 20px;
+  padding: 10px 24px 10px 24px;
   border: none;
-  border-radius: 5%;
+  border-radius: 6%;
   cursor: pointer;
 }
 
@@ -51,7 +51,7 @@ input[type="button"] {
 }
 
 nav {
-  margin: 0px 20px 0px 20px;
+  margin: 0rem 1rem 0rem 1.5rem;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -79,69 +79,65 @@ nav #sign-btn {
   background-color: #1a73e8;
 }
 
-.search-bar {
+main {
   align-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 584px;
 }
 
-.google-logo {
+main .google-logo {
+  align-self: center;
   width: 271px;
   height: 97px;
   padding: 10px;
-  align-self: center;
 }
 
-.search-form {
+main .search-form {
   padding: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.search-text {
+main .search-text {
   background-image: url(https://www.google.com/images/searchbox/desktop_searchbox_sprites302_hr.webp);
   background-repeat: no-repeat;
   background-size: 26px;
   background-position: 10px 12px;
   font-size: 16px;
   height: 42px;
+  border: 1px solid #dfe1e5;
   border-radius: 25px;
-  border-color: #dfe1e5;
 }
 
-.search-text:hover {
+main .search-text:hover {
   box-shadow: 2px 2px 3px #dfe1e5;
 }
 
-.search-btn-group {
+main .search-btn-group {
   margin-bottom: 30%;
   padding: 20px;
   align-self: center;
 }
 
-.search-btn {
-  margin: 10px;
+main .search-btn {
+  margin: 0.25rem;
   background-color: #f8f9fa;
 }
 
-.search-btn:hover {
-  outline: solid;
-  outline-color: gainsboro;
-  outline-width: thin;
+main .search-btn:hover {
+  box-shadow: 0 0 1px #70757a;
 }
 
 footer .lang {
-  padding: 15px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   background-color: #f2f2f2;
 }
+
 footer .info {
-  padding: 15px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   background-color: #f2f2f2;
-  border: #dadce0;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid #dadce0;
   display: grid;
   grid-template-areas: "company co2 settings";
   gap: 30px 20px;
@@ -157,22 +153,22 @@ footer .info-co2 {
 }
 
 footer .info-co2-img {
-  margin-right: 5px;
-  height: 14px;
+  margin-right: 0.25rem;
+  height: 1em;
 }
 
 footer .info-company {
   grid-area: company;
   grid-column: 1fr;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 footer .info-settings {
   grid-area: settings;
   grid-column: 1fr;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 @media (min-width: 1200px) {
