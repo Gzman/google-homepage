@@ -27,7 +27,7 @@ body {
   height: 100vh;
   background-color: #ffffff;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 a {
@@ -40,7 +40,7 @@ a:hover {
 }
 
 input[type="button"] {
-  padding: 10px 24px 10px 24px;
+  padding: 0,625rem 1.5rem 0.625rem 1.5rem;
   border: none;
   border-radius: 6%;
   cursor: pointer;
@@ -52,7 +52,7 @@ input[type="button"] {
 
 nav {
   margin: 0rem 1rem 0rem 1.5rem;
-  height: 60px;
+  height: 3.75rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -71,7 +71,7 @@ nav .menu {
 }
 
 nav .menu a {
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 nav #sign-btn {
@@ -81,31 +81,34 @@ nav #sign-btn {
 
 main {
   align-self: center;
+  position: fixed;
+  top: 25vh;
   display: flex;
   flex-direction: column;
-  width: 584px;
 }
 
 main .google-logo {
   align-self: center;
+  padding: 0.75rem;
   width: 271px;
   height: 97px;
-  padding: 10px;
 }
 
 main .search-form {
-  padding: 10px;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 main .search-text {
+  font-size: 1rem;
+  height: 42px;
+  width: 584px;
   background-image: url(https://www.google.com/images/searchbox/desktop_searchbox_sprites302_hr.webp);
   background-repeat: no-repeat;
   background-size: 26px;
   background-position: 10px 12px;
-  font-size: 16px;
-  height: 42px;
   border: 1px solid #dfe1e5;
   border-radius: 25px;
 }
@@ -115,9 +118,7 @@ main .search-text:hover {
 }
 
 main .search-btn-group {
-  margin-bottom: 30%;
-  padding: 20px;
-  align-self: center;
+  padding: 1.25rem;
 }
 
 main .search-btn {
@@ -140,7 +141,7 @@ footer .info {
   border: 1px solid #dadce0;
   display: grid;
   grid-template-areas: "company co2 settings";
-  gap: 30px 20px;
+  gap: 1.875rem 1.25rem;
 }
 
 footer a {
@@ -187,7 +188,7 @@ footer .info-settings {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   footer .info {
     grid-template-areas:
       "co2"
