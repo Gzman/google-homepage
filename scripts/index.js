@@ -1,7 +1,5 @@
 
-const signButton = document.querySelector("#sign-btn");
-
-signButton.onclick = () => {
+const stylePage = () => {
     const navbar = document.querySelector("nav");
     navbar.style["background-color"] = "#ff6600";
 
@@ -16,3 +14,21 @@ signButton.onclick = () => {
     document.querySelector("footer .info").style["background-color"] = "#ff6600";
     document.querySelector("footer .lang").style["background-color"] = "#ff6600";
 }
+
+const signButton = document.querySelector("#sign-btn");
+signButton.onclick = () => stylePage();
+
+const doSomething = function() {
+    this.classList.toggle("search-btn-onclick");
+    const navLinks = document.querySelectorAll("nav a");
+    for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].style["color"] = "#6633ff";
+        navLinks[i].style["font-size"] = "16px";
+    }
+}
+
+const heyHo = () => document.querySelector(".search-text").style["background-color"] = "#ff6600";
+
+const googleSearchButton = document.querySelector(".search-btn");
+googleSearchButton.addEventListener("click", doSomething);
+googleSearchButton.addEventListener("click", heyHo);
